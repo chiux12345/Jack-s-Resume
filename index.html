@@ -320,7 +320,7 @@ html:not(.is-en) .outline{margin-top:18px;letter-spacing:.42em;-webkit-text-stro
 /* typography: avoid 1–2 character last lines on narrow screens */
 h1,h2,h3,.hi,.org,.meta,.prev,.wk .t,.target b{text-wrap:balance}
 p,.desc,.sch-p,.edu p,.ct b{text-wrap:pretty}
-li,.xch li span,.wk .t,.pt>p,.sk p{text-wrap:balance}
+li,.xch li span,.wk .t,.pt>p,.sk p{text-wrap:pretty}
 .strip b{white-space:nowrap}
 html:not(.is-en) .hi .ph{display:inline-block}
 .is-en .hi .ph+.ph::before{content:" "}
@@ -328,7 +328,9 @@ html:not(.is-en) .hi .ph{display:inline-block}
 .org{word-break:keep-all;overflow-wrap:anywhere}
 .edu p{text-wrap:balance}
 @media (max-width:520px){.xch ul.dots li{grid-template-columns:1fr;gap:0}}
-.xch p{text-wrap:balance}
+.xch p{text-wrap:pretty}
+.lead .at{display:inline-block}
+.lead .at em{margin:0 6px 0 2px}
 </style>
 </head>
 <body>
@@ -352,7 +354,7 @@ html:not(.is-en) .hi .ph{display:inline-block}
     <div class="boot">OPEN TO WORK · 2027.06</div>
     <h1 class="big">焦仲文</h1>
     <div class="outline">JACK</div>
-    <div class="lead">AI 應用與網站開發<em>@</em>天秤座法律事務所</div>
+    <div class="lead">AI 應用與網站開發 <span class="at"><em>@</em>天秤座法律事務所</span></div>
     <div class="school-blk">
       <div class="sch-u"><span>國立勤益科技大學</span><span class="sch-t">碩士在讀</span></div>
       <div class="sch-p">智慧製造與資訊應用國際碩士學位學程</div>
